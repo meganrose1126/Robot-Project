@@ -1,0 +1,158 @@
+h1 {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	background-image: linear-gradient(purple, blue);
+	height: 100%;
+	margin: 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.robots {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.head,
+.left_arm,
+.torso,
+.right_arm,
+.left_leg,
+.right_leg {
+	background-color: greenyellow;
+}
+
+.head {
+	width: 200px;
+	margin: 0 auto;
+	height: 150px;
+	border-radius: 200px 200px 0 0;
+	margin-bottom: 10px;
+}
+
+.eyes {
+	display: flex;
+}
+
+
+.head:hover {
+	-webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+	transform: rotate(360deg);
+	transition: 0.5s ease-in-out;
+}
+
+.upper_body {
+	width: 300px;
+	height: 150px;
+	display: flex;
+}
+
+.left_arm,
+.right_arm {
+	width: 40px;
+	height: 125px;
+	border-radius: 100px;
+}
+
+.left_arm {
+	margin-right: 10px;
+	display: flex;
+}
+
+.left_arm:hover {
+	-webkit-transform: rotate(40deg);
+    -moz-transform: rotate(40deg);
+    -o-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+	transform: rotate(40deg);
+}
+
+.right_arm {
+	margin-left: 10px;
+	display: flex;
+}
+
+.right_arm:hover {
+	-webkit-transform: rotate(-40deg);
+    -moz-transform: rotate(-40deg);
+    -o-transform: rotate(-40deg);
+    -ms-transform: rotate(-40deg);
+	transform: rotate(-40deg);
+}
+
+.torso {
+	width: 200px;
+	height: 200px;
+	border-radius: 0 0 50px 50px;
+	display: flex;
+
+}
+
+.lower_body {
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	display: flex;
+
+}
+
+.left_leg,
+.right_leg {
+	width: 40px;
+	height: 120px;
+	border-radius: 0 0 100px 100px;
+}
+
+.left_leg {
+	margin-left: 45px;
+	display: flex;
+}
+
+.left_leg:hover {
+	-webkit-transform: rotate(20deg);
+	-moz-transform: rotate(20deg);
+	-o-transform: rotate(20deg);
+	-ms-transform: rotate(20deg);
+	transform: rotate(20deg);
+}
+
+.right_leg {
+	margin-left: 30px;
+	display: flex;
+}
+
+.right_leg:hover {
+	-webkit-transform: rotate(-20deg);
+	-moz-transform: rotate(-20deg);
+	-o-transform: rotate(-20deg);
+	-ms-transform: rotate(-20deg);
+	transform: rotate(-20deg);
+}
+
+.left_eye,
+.right_eye {
+	width: 20px;
+	height: 20px;
+	border-radius: 15px;
+	background-color: red;
+}
+
+
+.left_eye {
+	position: relative;
+	top: 80px;
+	left: 40px;
+}
+
+.right_eye {
+	position: relative;
+	top: 80px;
+	left: 120px;
+}
